@@ -8,6 +8,7 @@ Bug similar to issue https://github.com/helm/helm/issues/7729
 
 ### Sad Path
 
+`helm dep up charts/sad-parent`
 `helm install parent charts/sad-parent`
 
 This will show only a pod called `child`. It will not respect the aliases.
@@ -17,6 +18,7 @@ Note that the `version` for the dependent child chart is commented out in `sad-p
 
 ### Happy Path
 
+`helm dep up charts/happy-parent`
 `helm install parent charts/happy-parent`
 
 This will show 2 pods, one called `childone` and another called `childtwo`. 
