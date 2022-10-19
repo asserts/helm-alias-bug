@@ -1,0 +1,22 @@
+apiVersion: v2
+name: sad-parent
+description: Parent Helm Chart displaying helm bug similar to https://github.com/helm/helm/issues/7729
+type: application
+
+version: 0.0.1
+
+dependencies:
+  - name: child
+    repository: file://./child
+    alias: childone
+    condition: childone.enabled
+    # version: 0.0.1
+  - name: child
+    repository: file://./child
+    alias: childtwo
+    condition: childtwo.enabled
+    # version: 0.0.1
+
+maintainers:
+  - name: Asserts
+    url: https://github.com/asserts

@@ -1,0 +1,22 @@
+apiVersion: v2
+name: happy-parent
+description: Parent Helm Chart working as it should
+type: application
+
+version: 0.0.1
+
+dependencies:
+  - name: child
+    repository: file://./child
+    alias: childone
+    condition: childone.enabled
+    version: 0.0.1
+  - name: child
+    repository: file://./child
+    alias: childtwo
+    condition: childtwo.enabled
+    version: 0.0.1
+
+maintainers:
+  - name: Asserts
+    url: https://github.com/asserts

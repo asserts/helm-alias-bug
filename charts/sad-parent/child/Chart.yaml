@@ -1,0 +1,9 @@
+apiVersion: v2
+description: Child Helm Chart displaying helm bug in https://github.com/helm/helm/issues/2993
+icon: https://www.asserts.ai/favicon.png
+maintainers:
+- name: Asserts
+  url: https://github.com/asserts
+name: child
+type: application
+version: 0.0.1

@@ -1,0 +1,7 @@
+childone:
+  enabled: true
+  message: "I am child ONE"
+
+childtwo:
+  enabled: true
+  message: "I am child TWO"

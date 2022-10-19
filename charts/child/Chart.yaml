@@ -1,0 +1,10 @@
+apiVersion: v2
+name: child
+description: Child Helm Chart displaying helm bug similar to https://github.com/helm/helm/issues/7729
+type: application
+
+version: 0.0.1
+
+maintainers:
+  - name: Asserts
+    url: https://github.com/asserts
